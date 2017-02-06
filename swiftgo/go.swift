@@ -17,7 +17,7 @@ import Foundation
 //  This is the equivalent of the go keyword in golang
 //  It can be used as such thanks to trailing closures in swift
 //
-func go (closure: ()->Void) {
+public func go (closure: ()->Void) {
     var queue = dispatch_get_global_queue(0, 0)    
     dispatch_async(queue, closure)
 }
@@ -28,7 +28,7 @@ func go (closure: ()->Void) {
 //  We will make use of custom operators, optional structs, 
 //  and dispatch_semaphores to send types through our channel
 //
-struct chan<T> {
+public struct chan<T> {
     var val: T?
     var semaphore: dispatch_semaphore_t
     
@@ -38,10 +38,14 @@ struct chan<T> {
     }
 }
 
+
+prefix operator  <- {}
+infix operator   <- {}
+
 //Prefix function for channel operator <-c
 //Should return value in pipe or block until it recieves
 //a value
-@prefix func <-<T> (inout channel: chan<T>) -> T?{
+public prefix func <-<T> (inout channel: chan<T>) -> T?{
     dispatch_semaphore_wait(channel.semaphore, DISPATCH_TIME_FOREVER)
     
     if let v = channel.val {
@@ -53,15 +57,13 @@ struct chan<T> {
 
 //Infix function for channel operator c <- 1
 //Should write value to pipe or block until it can
-@infix func <-<T> (inout channel: chan<T>, val: T){
-    if !channel.val? {
+public func <-<T> (inout channel: chan<T>, val: T){
+    if !(channel.val? != nil) {
         channel.val = val
         dispatch_semaphore_signal(channel.semaphore)
         return;
     }
 }
 
-operator prefix <- {}
-operator infix  <- {}
 
 

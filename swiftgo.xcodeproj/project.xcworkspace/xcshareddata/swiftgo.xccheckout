@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C37AE9B6-87B9-4E00-9E90-29F3356E0279</string>
+	<key>IDESourceControlProjectName</key>
+	<string>swiftgo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5409AAB0EAFE09DCEC612ED3017A40C62AEF22FA</key>
+		<string>https://github.com/RetVal/swiftgo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>swiftgo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5409AAB0EAFE09DCEC612ED3017A40C62AEF22FA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RetVal/swiftgo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5409AAB0EAFE09DCEC612ED3017A40C62AEF22FA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5409AAB0EAFE09DCEC612ED3017A40C62AEF22FA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>swiftgo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

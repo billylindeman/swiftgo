@@ -1,4 +1,4 @@
-##Goroutines implemented in Apple Swift 
+## Goroutines implemented in Apple Swift 
 
 This is a small example of using trailing closures, custom operators, and generics in swift.
 
